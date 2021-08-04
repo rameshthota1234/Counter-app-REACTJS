@@ -1,12 +1,14 @@
 pipeline {
     agent any
    
+    tools {nodejs "node"}
+    
     stages {
         stage('build') {
             steps {
                 echo 'doing npm install'
                 sh 'npm install'
-                echo 'doing npm install'
+                echo 'done with npm install'
                 
             }
         }
