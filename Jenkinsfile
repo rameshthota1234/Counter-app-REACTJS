@@ -4,7 +4,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'inside build method'
+                echo 'doing npm install'
+                sh 'npm install'
+                echo 'doing npm install'
+                
             }
         }
         
