@@ -6,7 +6,7 @@ pipeline {
         stage('build') {
             steps {
                sh "ls -la"
-                sh "cd ~/src"
+                sh "cd src"
                 sh "pwd"
                 echo 'doing npm install'
                 sh 'npm install'
